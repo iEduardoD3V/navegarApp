@@ -2,9 +2,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather } from "@expo/vector-icons";
 
 import Inicial from "../screens/TelaInicial";
-import Detalhes from "../screens/TelaDetalhes";
 import Config from "../screens/TelaConfig";
-import Lista from "../screens/TelaDetalhes";
+import Relogio from "../screens/TelaDetalhes";
 
 const Tab = createBottomTabNavigator();
 
@@ -19,10 +18,10 @@ export default function TabRoutes() {
         }}
       />
       <Tab.Screen
-        name="Lista"
-        component={Lista}
+        name="Relógio"
+        component={Relogio}
         options={{
-          tabBarIcon: () => <Feather name="list" size={25} />,
+          tabBarIcon: () => <Feather name="clock" size={25} />,
         }}
       />
       <Tab.Screen
